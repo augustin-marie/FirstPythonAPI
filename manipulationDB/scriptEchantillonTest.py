@@ -22,9 +22,9 @@ try :
             f"lieuIntervention, resolu, compteRenduIntervention) VALUES ('{interventionTest.idTechnicien}', "\
             f"'{interventionTest.idClient}','{interventionTest.descriptionIntervention}',"\
             f"'{interventionTest.lieuIntervention}','{interventionTest.resolu}','{interventionTest.compteRenduIntervention}')"
-        sql.executeCommand(sqlInsert)
+        sql.executerCommande(sqlInsert)
         sql.commit()
 
 except Exception as exc:
     print("Une erreur c'est produite : " + str(exc))
-    sql.closeConnection()
+    sql.fermerConnection()

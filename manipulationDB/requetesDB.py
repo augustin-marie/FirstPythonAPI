@@ -6,11 +6,11 @@ class RequetesDB:
         self.connection = sqlite3.connect(dbName)
         self.cursor = self.connection.cursor()
     
-    def executeCommand (self, sqlCmd):
+    def executerCommande (self, sqlCmd):
         self.cursor.execute(sqlCmd)
     
     def commit(self):
         self.connection.commit()
     
-    def closeConnection(self):
+    def fermerConnection(self):
         self.connection.close()

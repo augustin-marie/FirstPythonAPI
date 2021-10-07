@@ -16,6 +16,6 @@ sqlCreatetable = f"CREATE TABLE IF NOT EXISTS interventions("\
     f"resolu NUMERIC,"\
     f"compteRenduIntervention TEXT)"
 
-sql.executeCommand(sqlCreatetable)
+sql.executerCommande(sqlCreatetable)
 sql.commit()
-sql.closeConnection()
+sql.fermerConnection()
