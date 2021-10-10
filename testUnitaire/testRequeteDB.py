@@ -1,10 +1,10 @@
 import unittest
-from ..manipulationDB.requetesDB import RequetesDB
+from manipulationDB.requetesDB import RequetesDB
 
 class RequeteDBTestCase(unittest.TestCase):
-    def Creer_requete(self):
+    def test_Creer_requete(self):
         requete1 = RequetesDB("interventions.db")
-        self.
+        self.assertIsNotNone(requete1)
 
 
 

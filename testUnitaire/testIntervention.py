@@ -1,8 +1,8 @@
 import unittest
-from ..manipulationDB.intervention import Intervention
+from manipulationDB.intervention import Intervention
 
 class InterventionTestCase(unittest.TestCase):
-    def Creer_Intervention(self):
+    def test_Creer_Intervention(self):
         inter1 = Intervention(1 , 1 , "a" , "a", True, "a")
         self.assertIsNotNone(inter1)
 
