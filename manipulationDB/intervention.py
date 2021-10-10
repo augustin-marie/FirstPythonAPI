@@ -9,3 +9,11 @@ class Intervention:
         self.lieuIntervention=lieuIntervention
         self.resolu=resolu
         self.compteRenduIntervention=compteRenduIntervention
+    
+    def __str__(self):
+        return f"numéro technicien : {self.idTechnicien} / "\
+            f"numéro client : {self.idClient} / "\
+            f"description intervention : {self.descriptionIntervention} / "\
+            f"lieu de l'intervention : {self.lieuIntervention} / "\
+            f"status de résolution : {self.resolu} / "\
+            f"compte rendu : {self.compteRenduIntervention}"
